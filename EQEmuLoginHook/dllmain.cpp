@@ -356,7 +356,7 @@ int __cdecl ProcessGameEvents_Hook() {  //55AFB3
 	if (!g_bFocus)
 	{		
 		
-		
+#ifdef EQMAC
 		if(*(DWORD*)(0x007F97D0) != 0 && setResolution == false)
 		{
 
@@ -376,6 +376,7 @@ int __cdecl ProcessGameEvents_Hook() {  //55AFB3
 			*(DWORD*)0x0063AE8C = refresh;
 			((int(__cdecl*)())0x0043BBE2)();
 		}
+#endif
 
 
 #ifdef EQMAC

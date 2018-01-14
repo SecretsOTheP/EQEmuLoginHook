@@ -1,0 +1,4 @@
+LIBRARY    eqmain.dll
+EXPORTS
+new_dll_main=new_dll_main @1
+dll_main=dll_main @2
